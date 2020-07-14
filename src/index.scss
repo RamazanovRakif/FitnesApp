@@ -1,0 +1,40 @@
+@import '../src/Css/Color.scss' ;
+*, *::after, *::before {
+    /* margin: 0;  
+    padding: 0; */
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none !important;
+}
+body {
+  font-family: 'Open sans'-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 
+:root {
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #fff;
+  
+} */
+
+html {
+  color: $theme-white;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+/* @import '~font-awesome/css/font-awesome.min.css' */
+

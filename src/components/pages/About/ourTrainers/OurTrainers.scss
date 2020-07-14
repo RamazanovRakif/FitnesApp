@@ -1,0 +1,57 @@
+@import "../../../../Css/Color.scss";
+
+.our_trainers {
+
+    background-color: $theme-dark-lite;
+
+    &_content {
+        .our_trainers_items {
+            grid-template-columns: 1fr 1fr 1fr;
+            .our_trainers_item {
+                padding: 2em .8rem;
+                background: $theme-title;
+                margin-right: 2px;
+                margin-bottom: 10px;
+
+                &_img {
+                    a {
+                        img {
+                            border-radius: 50%;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                &_info {
+                    .team_title {
+                        .sub_title_team {
+                            font-size: 14px;
+                            color: $theme-color-red;
+                            font-weight: 600;
+                            display: block;
+                        }
+
+                        a {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: $theme-white;
+                        }
+                    }
+
+                    p {
+                        color: $theme-paragraph;
+                        line-height: 28px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .our_trainers_items {
+       
+        grid-template-columns:1fr !important;
+    }
+}

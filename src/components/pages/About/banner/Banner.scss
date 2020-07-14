@@ -1,0 +1,23 @@
+.banner {
+    position: relative;
+    background: url('../../../../images/banner3.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 350px;
+
+    &_overlay {
+    color: rgba(255,255,255,.4);
+        &_content {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            &_title {
+                color: white;
+                font-size: 2.2rem;
+            }
+        }
+
+
+    }
+}

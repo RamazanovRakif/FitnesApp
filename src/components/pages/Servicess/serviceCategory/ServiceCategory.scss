@@ -1,0 +1,58 @@
+@import "../../../../Css/Color.scss";
+
+.services {
+    background-color: $theme-dark-lite;
+
+    &_content {
+        &_items {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 35px;
+
+            &_container {
+                background: $theme-dark;
+                padding: 15px;
+
+                .services_content_item {
+                    &_image {
+                        position: relative;
+                        margin: auto;
+                        overflow: hidden;
+
+                        a {
+                            img {
+                                &:hover {
+                                    max-width: 100%;
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                    transform: scale(1.1);
+                                    transition: all 0.3s ease;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &_info{
+                        &_title{
+                            color: $theme-white;
+                            margin-top: 10px;
+                            font-size: 1.2rem;
+                        }
+                        &_text{
+                            color: $theme-paragraph;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .services_content_items {
+        grid-template-columns: 1fr  ;
+        grid-gap: 30px;
+    }
+}

@@ -1,0 +1,71 @@
+@import "../../../../Css/Color.scss";
+
+
+.main__galery {
+  &__dark {
+    background-color: $theme-dark-lite;
+    padding-top: 50px;
+  }
+}
+.galery__content {
+  &__portfolio {
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+
+    &__right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &:hover .galery__overlay {
+        opacity: 1;
+        bottom: 22%;
+        visibility: visible;
+      }
+      
+    }
+
+    .galery__overlay {
+      opacity: 0;
+      visibility: hidden;
+      background: #fff;
+      bottom: 0;
+      position: absolute;
+      padding: 1rem 1rem;
+      width: 100%;
+      transform: translate3d(0px, 100%, 0px);
+      transition: all 0.6s ease 0s;
+      text-align: left;
+      border: none;
+
+      h4{
+        color:$theme-dark-lite;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    p{
+        margin: 0;
+        font-size: .7rem;
+        color: $theme-dark;
+    }
+    }
+  }
+}
+@media (max-width:768px){
+  .galery__content {
+    &__portfolio {
+      padding: 0;
+      grid-template-columns: 1fr;
+  
+      &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

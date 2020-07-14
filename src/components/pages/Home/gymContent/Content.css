@@ -1,0 +1,49 @@
+.gym-content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    }
+    .gym--content-item{
+        /* max-width: 25%; */
+        position: relative;
+        cursor: pointer;
+    }
+    .gym--content--details{
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    .gym--content--title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #eee;
+    }
+    .gym--content-item:hover .gym--content--details{
+      opacity: 1;
+    }
+    .gym--content-item:hover .gym--content--overlay{
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    background-color: crimson;
+    transition: all 0.7s;
+    }
+    
+    
+    @media (max-width:768px){
+       .gym-content{
+          grid-template-columns: repeat(2,1fr);
+       }
+       
+    }

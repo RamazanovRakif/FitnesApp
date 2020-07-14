@@ -1,0 +1,74 @@
+@import "../../../../Css/Color.scss";
+
+
+.our__plans {
+  background-color: $theme-dark-lite;
+
+  .pricing__container {
+    margin-top: 30px;
+
+    .pricing__items__row {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 30px;
+
+      .pricing__item {
+        padding: 40px;
+        transition: 0.3s;
+        background: $theme-white;
+        overflow: hidden;
+        position: relative;
+
+        h4 {
+          font-size: 20px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: $theme-title;
+          text-align: center;
+          margin-bottom: 20px;
+          text-transform: capitalize;
+        }
+        p {
+          font-size: 34px;
+          line-height: 40px;
+          color: $theme-title;
+          font-weight: bold;
+          text-align: center;
+          background: rgba(233, 236, 239, 0.66);
+          padding: 15px 15px;
+          margin-bottom: 30px;
+
+          span {
+            font-size: 15px;
+            line-height: 25px;
+            color: $theme-paragraph;
+            font-weight: 400;
+          }
+        }
+        .services_name {
+          list-style: none;
+          margin-bottom: 13px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 10px;
+          
+          .nick_name {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 25px;
+            color: $theme-paragraph;
+          }
+          .icon_type{
+              text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px){
+  .pricing__items__row {
+    grid-template-columns:1fr !important;
+    grid-gap: 20px; 
+  }
+}

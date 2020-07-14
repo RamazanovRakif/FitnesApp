@@ -1,0 +1,49 @@
+@import "../../../../Css/Color.scss";
+
+.our__advantage__action {
+  background-color: $theme-dark;
+
+  .main__content {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .our__suggestions__items {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    .our__suggestions__item {
+      padding: 1.1rem;
+      background: transparent;
+      transition: 0.3s;
+      border-radius: 5px;
+      &:hover {
+        background: $theme-white;
+      }
+      &:hover .item-title {
+        color: $theme-title;
+      }
+      .item-title {
+        color: $theme-white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+
+  
+@media (max-width: 768px) {
+  .section-gap {
+    padding: 50px 0;
+  }
+  .main__content {
+    grid-template-columns: 1fr !important ;
+    grid-gap: 20px;
+  }
+  .our__suggestions__items {
+    grid-template-columns: 1fr !important;
+    grid-gap: 20px;
+  }
+}
